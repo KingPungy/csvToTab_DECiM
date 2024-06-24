@@ -7,7 +7,7 @@ The CSV Converter DECiM script is designed to process large CSV files, extractin
 This guide will help you set up and run the CSV Converter DECiM script on your local machine.
 
 ### Prerequisites
-You can use the included `.venv` file, which already has the necessary dependencies installed. from the release page.
+You can use the included `.venv` file, which already has the necessary dependencies installed. From the [Releases page](https://github.com/KingPungy/csvToTab_DECiM/releases).
 
 - **Python**: Ensure you have Python installed on your machine. The version used to develop the script is Python 3.11.9. You can download Python from the official website: [Python Downloads](https://www.python.org/downloads/).
 - once you have python installed, you can run the `setup.bat` file to setup the `.venv` and install the required dependencies.
