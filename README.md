@@ -18,7 +18,7 @@ This way you can use the run.bat file to run the script.
    Clone the project repository to your local machine using:
 
    ```bash
-   git clone https://yourrepository.com/path/to/csv_converter_DECiM
+   git clone https://github.com/KingPungy/csvToTab_DECiM
    ```
 
    Alternatively, download the script directly if it's available as a standalone file.
