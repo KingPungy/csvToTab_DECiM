@@ -66,8 +66,8 @@ The script can be executed directly using Python or through a provided `run.bat`
 
 The script's operation is streamlined for ease of use and efficiency, detailed in the following steps:
 
-1. **Initiation via [`run.bat`](run.bat")**:
-   - Users start the script by executing the [`run.bat`](run.bat") file. This method is designed for simplicity, allowing even those with minimal technical expertise to run the script without navigating command line interfaces.
+1. **Initiation via [`run.bat`](run.bat)**:
+   - Users start the script by executing the [`run.bat`](run.bat) file. This method is designed for simplicity, allowing even those with minimal technical expertise to run the script without navigating command line interfaces.
 
 2. **CSV File Selection**:
    - Upon execution, the script presents a file picker dialog. This interface is intuitive, guiding users to select the CSV file they wish to process. The selected CSV file:
