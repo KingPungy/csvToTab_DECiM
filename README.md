@@ -23,7 +23,11 @@ This way you can use the run.bat file to run the script.
 
    Alternatively, download the script directly if it's available as a standalone file.
 
-2. **Prepare Your CSV Files**
+2. **Initialize the Virtual Environment**
+
+   Run the `setup.bat` file to initialize the virtual environment and install the required dependencies. This step is necessary if you are not using the included `.venv` file.
+
+3. **Prepare Your CSV Files**
 
    Ensure your CSV files are in a known directory. The script expects CSV files to follow a specific format where measurements are segmented within the file.
 
