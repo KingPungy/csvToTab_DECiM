@@ -55,13 +55,29 @@ The script can be executed directly using Python or through a provided `run.bat`
 
    - Double-click [`run.bat`](run.bat) to execute the script.
 
-### Script Workflow
 
-- The script reads the source CSV file, detecting its encoding to ensure correct processing.
-- It skips the first row to remove any inconsistent header.
-- The script then iterates over each row, grouping rows into individual measurements based on the file's structure.
-- For each measurement, it extracts the 1st, 5th, and 6th columns and writes these to a new CSV file in the specified target directory.
-- The process repeats for each measurement found in the source file.
+### Script Workflow Detailed Explanation
+
+The script's operation is streamlined for ease of use and efficiency, detailed in the following steps:
+
+1. **Initiation via [`run.bat`](run.bat")**:
+   - Users start the script by executing the [`run.bat`](run.bat") file. This method is designed for simplicity, allowing even those with minimal technical expertise to run the script without navigating command line interfaces.
+
+2. **CSV File Selection**:
+   - Upon execution, the script presents a file picker dialog. This interface is intuitive, guiding users to select the CSV file they wish to process. The selected CSV file:
+     - May contain multiple measurements, delineated by empty lines, enabling batch processing in one go.
+     - Serves as the basis for determining the target directory where the output files will be stored, ensuring that the outputs are easily locatable and organized relative to the source file.
+
+3. **Processing and Output File Creation**:
+   - The script meticulously processes the selected CSV file, identifying each measurement by the empty lines that separate them. For every measurement found:
+     - It extracts the relevant data, focusing on the columns that contain the essential information for subsequent analysis 
+         - The 1st, 5th, and 6th columns. (Can be changed in the script if needed)
+     - It generates a new text file, formatting the extracted data with tab ('\t') separators for clarity and compatibility with further processing or analysis tools.
+
+4. **Output File Naming and Structure**:
+   - Each output file is thoughtfully named following the pattern `output_measurement_{measurement_number}-date`, where `{measurement_number}` is a sequentially assigned unique identifier for each measurement. This naming convention ensures easy identification and organization of the output files.
+   - The header row of each output file is precisely defined to include "Frequency (Hz)", "|Z| (ohms)", and "Phase of Z (deg)" columns. This specific arrangement caters to the requirements of the DECiM software, facilitating seamless integration and use of the output files in subsequent analyses.
+
 
 ### Output
 
